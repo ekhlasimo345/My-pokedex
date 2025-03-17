@@ -1,2 +1,2 @@
 let name = 'Pokemon';
-alert(name)
+console.log(name);
