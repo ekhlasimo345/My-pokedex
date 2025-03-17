@@ -1,3 +1,33 @@
-#poke-header {
-    color: blue;
+.pokedex-container {
+    background-image: url("images/container_bg.png") ;
+
+    width: 1000px;
+    height: 700px;
+
+
+}
+.pokedex-container .logo{
+    width : 50%;
+}
+.pokedex-container .pokemon-number{
+    color: gray;
+
+}
+.pokedex-container .pokemon-name{
+    font-weight: bold;
+
+}
+.pokedex-container .pokemon-type.plant{
+    background-color: green;
+
+}
+.pokedex-container .pokemon-type.poison{
+    background-color: purple;
+
+}
+.pokedex-container .poke-card {
+ border: 1px solid black;
+width: 230px;
+height: 350px;
+
 }
