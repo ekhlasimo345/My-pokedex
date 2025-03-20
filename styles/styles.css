@@ -1,13 +1,14 @@
-.pokedex-container {
+body {
     background-image: url("images/container_bg.png") ;
-
-    width: 1000px;
-    height: 700px;
+    width: fixed;
+    
+    
 
 
 }
 .pokedex-container .logo{
-    width : 50%;
+    
+    width : 40%;
 }
 .pokedex-container .pokemon-number{
     color: gray;
@@ -16,18 +17,38 @@
 .pokedex-container .pokemon-name{
     font-weight: bold;
 
+
 }
 .pokedex-container .pokemon-type.plant{
     background-color: green;
+    border-radius: 15%;
 
 }
 .pokedex-container .pokemon-type.poison{
     background-color: purple;
+    border-radius: 15%;
 
 }
 .pokedex-container .poke-card {
- border: 1px solid black;
-width: 230px;
-height: 350px;
-
+    
+    
+    background:#C0C0C0;
+    border-radius: 8%;
+    width: 230px;
+    height: 350px;
 }
+
+.pokedex-container .poke-card:active {
+    transform: scale(1.1);
+}
+
+     
+       
+    
+    
+    
+    
+    
+
+
+
