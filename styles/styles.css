@@ -6,41 +6,65 @@ body {
 
 
 }
-.pokedex-container .logo{
+.pokedex-logo .logo{
+    position: absolute;
+    z-index: -1;
+    margin-left: 18cm;
+    margin-right: 15cm;
+    width : 35%;
     
-    width : 40%;
+}
+ .pokedex-logo .pokball{
+    position: relative;
+    z-index: 1;
+    margin-left: 27cm;
+    margin-right: 10cm;
+    width:90px;
+    top:4cm;
+   
+    
+    
+    }
+
+.poke-cards {
+    
+    position :relative;
+    top: 7cm;
+    margin-left: 12cm;
+    margin-right: 6cm;
 }
 
 
-.pokedex-container .pokemon-number{
+.poke-cards .bulbasaur .pokemon-number{
     color: gray;
 
 }
-.pokedex-container .pokemon-name{
+.poke-cards .bulbasaur .pokemon-name{
     font-weight: bold;
 
 
 }
-.pokedex-container .pokemon-type.plant{
+.poke-cards .bulbasaur .pokemon-type.plant{
     background-color: green;
     border-radius: 15%;
+    
 
 }
-.pokedex-container .pokemon-type.poison{
+.poke-cards .bulbasaur .pokemon-type.poison{
     background-color: purple;
     border-radius: 15%;
 
 }
-.pokedex-container .poke-card {
+.poke-cards .bulbasaur {
     
     
-    background:#C0C0C0;
+    background:#61f9be;
     border-radius: 8%;
     width: 230px;
     height: 350px;
 }
 
-.pokedex-container .poke-card:active {
+.poke-cards .bulbasaur:hover {
     transform: scale(1.1);
 }
 
