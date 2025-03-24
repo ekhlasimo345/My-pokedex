@@ -26,36 +26,36 @@ body {
     
     }
 
-.poke-cards {
-    
-    position :relative;
+#poke-cards {
+    display :grid ;
+    grid-template-columns: repeat(4, 1fr);
     top: 7cm;
     margin-left: 12cm;
     margin-right: 6cm;
 }
 
 
-.poke-cards .bulbasaur .pokemon-number{
+#poke-cards .bulbasaur .pokemon-number{
     color: gray;
 
 }
-.poke-cards .bulbasaur .pokemon-name{
+#poke-cards .bulbasaur .pokemon-name{
     font-weight: bold;
 
 
 }
-.poke-cards .bulbasaur .pokemon-type.plant{
+#poke-cards .bulbasaur .pokemon-type.plant{
     background-color: green;
     border-radius: 15%;
     
 
 }
-.poke-cards .bulbasaur .pokemon-type.poison{
+#poke-cards .bulbasaur .pokemon-type.poison{
     background-color: purple;
     border-radius: 15%;
 
 }
-.poke-cards .bulbasaur {
+#poke-cards .bulbasaur {
     
     
     background:#61f9be;
@@ -64,7 +64,7 @@ body {
     height: 350px;
 }
 
-.poke-cards .bulbasaur:hover {
+#poke-cards .bulbasaur:hover {
     transform: scale(1.1);
 }
 

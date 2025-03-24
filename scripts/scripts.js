@@ -4,103 +4,125 @@ let pokemons =
 [
     {
       thumbnail: '001.png',
-      id:'N°01' ,
+      id:'001' ,
       name: 'bulbasaur',
       type: ['plant', 'poison'],
     },
     {
       thumbnail: '002.png',
-      id:'N°02',
+      id:'002',
       name: 'charmander.png',
       type: ['fire'],
     },
     {
       thumbnail: '003.png',
-      id:'N°03',
+      id:'003',
       name: 'caterpie',
       type: ['bug'],
     },
     {
       thumbnail: '004.png',
-      id:'N°04',
+      id:'004',
       name: 'kakuna',
       type: ['bug', 'poison'],
     },
     {
       thumbnail: '005.png',
-      id:'N°05',
+      id:'005',
       name: 'rattata',
       type: ['plant'],
     },
     {
       thumbnail: '006.png',
-      id:'N°06',
+      id:'006',
       name: 'pikachu',
       type: ['normal'],
     },
     {
       thumbnail: '007.png',
-      id:'N°07',
+      id:'007',
       name: 'vulpix',
       type: ['fire', 'plant'],
     },
     {
       thumbnail: '008.png',
-      id:'N°08',
+      id:'008',
       name: 'jigglypuff',
       type: ['normal', 'fairy'],
     },
     {
       thumbnail: '009.png',
-      id:'N°09',
+      id:'009',
       name: 'mew',
       type: ['phychic'],
     },
     {
       thumbnail: '010.png',
-      id:'N°10',
+      id:'010',
       name: 'ponyta',
       type: ['fire'],
     },
     {
       thumbnail: '011.png',
-      id:'N°11',
+      id:'011',
       name: 'cloyster',
       type: ['ice', 'water'],
     },
     {
       thumbnail: '012.png',
-      id:'N°12',
+      id:'012',
       name: 'groundor',
       type: ['ground'],
     },
     {
       thumbnail: '013.png',
-      id:'N°13',
+      id:'013',
       name: 'cubone',
       type: ['ground'],
     },
     {
       thumbnail: '014.png',
-      id:'N°14',
+      id:'014',
       name: 'tentacruel',
       type: ['poison', 'water'],
     },
     {
       thumbnail: '015.png',
-      id:'N°15',
+      id:'015',
       name: 'darkrai',
       type: ['dark'],
     },
     {
       thumbnail: '016.png',
-      id:'N°16',
+      id:'016',
       name: 'diglett',
       type: ['ground'],
     }
   ]  
 ;
-console.log(pokemons);
 
 
-const pokemonList = document.getElementsByClassName("poke-cards")
+
+for (let i=0; i < pokemons.length; i++){
+  let pokemon= pokemons[i];
+  let pokemonCard = document.createElement('div');
+  pokemonCard.classList.add(pokemon.name);
+  let pokemonImage = document.createElement('img');
+  pokemonImage.src = 'styles/images/' + pokemon.thumbnail;
+  pokemonImage.classList.add(pokemon.id);
+  pokemonCard.appendChild(pokemonImage);
+  let pokeCards = document.getElementById("poke-cards");
+
+
+  for (let k = 0 ; k < pokemon.type.length; k++){
+    let pokemonType = pokemon.type[k];
+    let pokemontypeelement = document.createElement('span');
+    pokemontypeelement.classList.add('pokemon-type', pokemonType);
+    pokemonCard.appendChild(pokemontypeelement);
+    pokemontypeelement.textContent = pokemonType;
+
+
+  }
+  pokeCards.appendChild(pokemonCard);
+};
+
