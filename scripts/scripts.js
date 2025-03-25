@@ -11,7 +11,7 @@ let pokemons =
     {
       thumbnail: '002.png',
       id:'002',
-      name: 'charmander.png',
+      name: 'charmander',
       type: ['fire'],
     },
     {
@@ -103,26 +103,47 @@ let pokemons =
 
 
 
-for (let i=0; i < pokemons.length; i++){
+for (let i = 0; i < pokemons.length; i++){
   let pokemon= pokemons[i];
   let pokemonCard = document.createElement('div');
+
   pokemonCard.classList.add(pokemon.name);
   let pokemonImage = document.createElement('img');
   pokemonImage.src = 'styles/images/' + pokemon.thumbnail;
+
   pokemonImage.classList.add(pokemon.id);
   pokemonCard.appendChild(pokemonImage);
   let pokeCards = document.getElementById("poke-cards");
 
 
+
+let pokeNumberElement = document.createElement('p');
+pokeNumberElement.classList.add('pokemon-number');
+pokeNumberElement.textContent= pokemon.id;
+pokemonCard.appendChild(pokeNumberElement);
+
+
+let pokeNameElement = document.createElement('p');
+pokeNameElement.classList.add('pokemon-name');
+pokeNameElement.textContent = pokemon.name;
+pokemonCard.appendChild(pokeNameElement);
+
+
+
+
   for (let k = 0 ; k < pokemon.type.length; k++){
     let pokemonType = pokemon.type[k];
     let pokemontypeelement = document.createElement('span');
-    pokemontypeelement.classList.add('pokemon-type', pokemonType);
+    pokemontypeelement.classList.add('pokemon-type', pokemon.type);
     pokemonCard.appendChild(pokemontypeelement);
-    pokemontypeelement.textContent = pokemonType;
+    pokemontypeelement.textContent = pokemon.type;
 
 
   }
+
+  
   pokeCards.appendChild(pokemonCard);
+
+
 };
 
