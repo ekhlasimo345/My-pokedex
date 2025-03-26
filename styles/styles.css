@@ -12,20 +12,7 @@ body {
     margin-left: 18cm;
     margin-right: 15cm;
     width : 35%;
-    @keyframes  {
-        from {left:0cm}
-        to {left:18cm}
-        
-        
-    }
-}
-.pokedex-logo .logo{
-
-  position: relative;
-  animation-name: example;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
-}   
+} 
     
  .pokedex-logo .pokball{
     position: relative;
