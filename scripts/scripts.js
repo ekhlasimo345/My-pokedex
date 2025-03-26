@@ -134,9 +134,9 @@ pokemonCard.appendChild(pokeNameElement);
   for (let k = 0 ; k < pokemon.type.length; k++){
     let pokemonType = pokemon.type[k];
     let pokemontypeelement = document.createElement('span');
-    pokemontypeelement.classList.add('pokemon-type', pokemon.type);
+    pokemontypeelement.classList.add('pokemon-type', pokemonType);
     pokemonCard.appendChild(pokemontypeelement);
-    pokemontypeelement.textContent = pokemon.type;
+    pokemontypeelement.textContent = pokemonType;
 
 
   }
