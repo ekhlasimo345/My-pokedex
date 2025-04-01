@@ -23,36 +23,40 @@ body {
     margin-right: 10cm;
     width:90px;
     top:4cm;
+    
    
     
-    
     }
+
 
 #poke-cards {
     display :grid ;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     position :relative;
     top: 7cm;
     margin-left: 12cm;
     margin-right: 6cm;
     border-radius: 8%;
+   
+   /* border :2px solid black;*/
+    
+}
+#poke-cards .pokemon-card {
+    
+    border-radius: 8%;
+    background-color:silver;
+    width: 300px;
+    height: auto;
+    margin: 10px;
     
     
 }
-
-
-
-#poke-cards :hover{
+#poke-cards .pokemon-card:hover{
     transform: scale(1.1);
 }
-/*#poke-cards .bulbasaur {
-    
-    
-    background:#61f9be;
-    border-radius: 8%;
-    width: 230px;
-    height: 350px;
-}*/
+
+
 
 
 #poke-cards  .pokemon-number{
@@ -73,6 +77,158 @@ body {
 #poke-cards .bulbasaur .pokemon-type.poison{
     background-color: purple;
     border-radius: 15%;
+
+}
+
+
+#poke-cards .charmander .pokemon-type.fire{
+    background-color: orangered;
+    border-radius: 15%;
+    
+
+}
+
+
+
+#poke-cards .caterpie .pokemon-type.bug{
+    background-color: blue;
+    border-radius: 15%;
+    
+
+}
+
+
+
+#poke-cards .kakuna .pokemon-type.bug{
+    background-color: blue;
+    border-radius: 15%;
+    
+
+}
+#poke-cards .kakuna .pokemon-type.poison{
+    background-color: purple;
+    border-radius: 15%;
+
+}
+
+
+#poke-cards .rattata .pokemon-type.plant{
+    background-color: green;
+    border-radius: 15%;
+    
+
+}
+
+ 
+
+#poke-cards .pikachu .pokemon-type.normal{
+    background-color: yellow;
+    border-radius: 15%;
+    
+
+}
+
+
+#poke-cards .vulpix .pokemon-type.fire{
+    background-color: orangered;
+    border-radius: 15%;
+    
+
+}
+#poke-cards .vulpix .pokemon-type.plant{
+    background-color: green;
+    border-radius: 15%;
+    
+
+}
+
+
+
+#poke-cards .jigglypuff .pokemon-type.normal{
+    background-color: yellow;
+    border-radius: 15%;
+    
+
+}
+#poke-cards .jigglypuff .pokemon-type.fairy{
+    background-color: white;
+    border-radius: 15%;
+}
+
+
+
+
+#poke-cards .mew .pokemon-type.phychic{
+    background-color: brown;
+    border-radius: 15%;
+    
+
+}
+
+
+
+
+
+#poke-cards .ponyta .pokemon-type.fire{
+    background-color: orangered;
+    border-radius: 15%;
+    
+
+}
+
+
+
+#poke-cards .cloyster .pokemon-type.ice{
+    background-color: lightblue;
+    border-radius: 15%;
+    
+
+} 
+#poke-cards .cloyster .pokemon-type.water{
+    background-color: rgb(73, 130, 174);
+    border-radius: 15%;
+    
+
+}
+
+
+
+
+#poke-cards .groundor .pokemon-type.ground{
+    background-color: green;
+    border-radius: 15%;
+    
+
+}
+#poke-cards .cubone .pokemon-type.ground{
+    background-color: rgb(172, 114, 57);
+    border-radius: 15%;
+    
+
+}
+#poke-cards .tentacruel .pokemon-type.poison{
+    background-color: yellow;
+    border-radius: 15%;
+    
+
+}
+#poke-cards .tentacruel .pokemon-type.water{
+    background-color: rgb(73, 130, 174);
+    border-radius: 15%;
+    
+
+}
+#poke-cards .darkrai .pokemon-type.dark{
+    
+    background-color: rgb(85, 48, 170);
+    border-radius: 15%;
+    
+
+}
+#poke-cards .diglett .pokemon-type.ground{
+    background-color: brown;
+    border-radius: 15%;
+    
 
 }
 

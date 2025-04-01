@@ -106,6 +106,7 @@ let pokemons =
 for (let i = 0; i < pokemons.length; i++){
   let pokemon= pokemons[i];
   let pokemonCard = document.createElement('div');
+  pokemonCard.classList.add('pokemon-card');
 
   pokemonCard.classList.add(pokemon.name);
   let pokemonImage = document.createElement('img');
@@ -127,6 +128,7 @@ let pokeNameElement = document.createElement('p');
 pokeNameElement.classList.add('pokemon-name');
 pokeNameElement.textContent = pokemon.name;
 pokemonCard.appendChild(pokeNameElement);
+
 
 
 
